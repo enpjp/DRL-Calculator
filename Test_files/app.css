@@ -1,0 +1,130 @@
+body {
+  font-family: Arial,Helvetica,sans-serif;
+  width: 100%;
+}
+div.menu_container {
+  border-style: none solid none none;
+  border-right: 3px solid black;
+  float: none;
+  overflow-x: auto;
+  position: relative;
+  right: 8px;
+  width: 200px;
+  height: 3000px;
+  top: 40px;
+  display: block;
+}
+div.Menu_item_container {
+  width: 200px;
+  background-position: left top;
+  height: 90px;
+  float: left;
+}
+div.menu_item {
+  border-style: none;
+  overflow: auto;
+  padding-top: 45px;
+  color: white;
+  height: 41px;
+  font-family: Arial,Helvetica,sans-serif;
+  background-image: url(../images/new_button.png);
+  background-position: left top;
+  text-align: center;
+  background-color: gray;
+  font-weight: bold;
+  width: 200px;
+  margin-top: 22px;
+}
+div.menu_item a:link {
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+div.menu_item a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+div.content_container {
+  border-style: none;
+  width: 1000px;
+  float: none;
+  left: 200px;
+  top: 30px;
+  background-image: url(../images/page_shadow.png);
+  position: absolute;
+  border-left-color: black;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 3000px;
+}
+div.content_image_top {
+  background-color: white;
+}
+div.content {
+  padding: 20px;
+  overflow: visible;
+  border-left-color: black;
+  background-position: right top;
+  width: 900px;
+  height: 800px;
+  background-repeat: no-repeat;
+}
+div.FormContainer {
+  border-style: none;
+  display: block;
+  height: 600px;
+  padding-right: 10px;
+  width: 300px;
+  float: left;
+  padding-left: 10px;
+}
+div.ResultsContainer {
+  border-style: none;
+  padding-left: 10px;
+  float: none;
+  height: 100%;
+  width: 60%;
+  padding-right: 10px;
+  display: block;
+}
+div.menu_image_top {
+  background-color: white;
+}
+div.menu_item a:hover {
+  color: #ffff33;
+}
+div.sample_data {
+  height: 300px;
+  float: left;
+  width: 200px;
+}
+div.login {
+  font-family: Arial,Helvetica,sans-serif;
+  text-align: center;
+  color: black;
+}
+div.login a:link {
+  font-family: Arial,Helvetica,sans-serif;
+  color: black;
+}
+div.warning {
+  border-style: solid;
+  border-color: red;
+  font-family: Arial,Helvetica,sans-serif;
+  font-style: italic;
+  color: red;
+}
+.sample_data {
+  width: 200px;
+  height: 300px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.sample_data_heading {
+  width: 200px;
+  height: 100px;
+}

@@ -3,6 +3,9 @@ version: beta-7
 runtime: python
 api_version: 1
 
+builtins:
+- remote_api: on
+
 handlers:
 - url: /stylesheets
   static_dir: stylesheets
@@ -11,4 +14,4 @@ handlers:
   static_dir: images
 
 - url: /.*
-  script: DRLchecker.py
+  script: main.py

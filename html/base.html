@@ -1,0 +1,105 @@
+{% block head_tag %}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta name="google-site-verification" content="hzsqNDGY2aX-zRMSik8gkLvIOFDc5r86ji-63TqyPeY" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width; height=device-height; maximum-scale=1.4; initial-scale=1.0; user-scalable=yes"/>
+<meta content="Paul J Palmer p.j.palmer@tech-trends.co.uk" name="author" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+<meta name="description" content="DRL Calculator" />
+<link rel="stylesheet" href="stylesheets/app.css" type="text/css" />
+{% endblock %}
+{% block head_tags_extra %}<style title="Internal" type="text/css">
+{{ menu_item }} {
+background-color: black;
+}
+{{ menu_item }} {
+  background-color: black;
+
+}
+
+</style>{% endblock %}
+
+{% block javascript_tag %}{% endblock %}
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28507011-1']);
+  _gaq.push(['_setDomainName', 'zaqwsxedce.appspot.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<title> {% block title %}{{ pageTitle }}{% endblock %} </title> 
+</head> 
+
+<body  {% block body_tag %} {% endblock %} > 
+<div class="page">
+
+
+{% block logon %}
+{% endblock %}
+
+{% block banner_tag %} 
+
+{% endblock %}
+
+
+
+
+
+{% block main-menu %}
+<div class="menu_container"><!-- Menu container -->
+<div class="content_image_top"><!-- Imagefile here --><br>
+</div>
+<div class="Menu_item_container"><!-- menu Item container -->
+<div id="Home" class="menu_item"><a href="/" >Home</a><br>
+</div>
+</div>
+
+<div class="Menu_item_container"><!-- menu Item container -->
+<div id="DataEntry" class="menu_item"><a href="/enter">Calculation</a><br>
+</div>
+</div>
+
+<div class="Menu_item_container"><!-- menu Item container -->
+<div id="National_DRLs" class="menu_item"><a href="/National_DRLs" >National DRLs</a></div>
+</div>
+
+<div class="Menu_item_container"><!-- menu Item container -->
+<div id="sample" class="menu_item"><a href="/sample" >Sample</a></div>
+</div>
+
+
+</div>
+<div class="content_container"><!-- Content Container -->
+<div class="content_image_top"><!-- Imagefile here --><br>
+</div>
+<div class="content"><!--Actual content starts here-->
+
+{% endblock %}
+
+{% block page_heading %}<h1>{{ pageTitle }}</h1>{% endblock %}
+
+
+	{% block content %}{% endblock %}
+</div>
+
+
+<div class="footer"> 
+
+{% block footer %}
+
+{% endblock %}
+</div>
+
+
+
+</body></html>

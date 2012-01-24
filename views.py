@@ -18,12 +18,13 @@
 # Note this must be the first line
 from google.appengine.dist import use_library
 use_library('django', '1.2')
-
+import os
 import cgi
 
 from google.appengine.api import users
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp.util import run_wsgi_app
+from google.appengine.ext.webapp import template
 from google.appengine.ext import db
 from corestats import Stats
 
@@ -52,11 +53,25 @@ class MainPage(webapp.RequestHandler):
        # self.response.headers['Content-Type'] = 'text/plain'
        # Displays in text if you leave this in!!
 
-        self.response.out.write(HTML.header("DRL Calculator","Home"," "))
+        #self.response.out.write(HTML.header("DRL Calculator","Home"," "))
 
-        self.response.out.write(HTML.body_header())
-	self.response.out.write(HTML.welcome())
-        self.response.out.write(HTML.footer)
+        #self.response.out.write(HTML.body_header())
+	#self.response.out.write(HTML.welcome())
+        #self.response.out.write(HTML.footer)
+        template_values = {
+	#	'my_qr_code': my_qr_code,
+
+	#	'login_url' : login_url,
+	#	'logout_url' : logout_url,
+	#	'logon_message' : logon_message,
+	#	'user_nickname_or_url' : user_nickname_or_url,
+
+		'menu_item' : 'Home',
+            	'pageTitle': 'DRL Calculator',          
+        }
+	path = os.path.join(os.path.dirname(__file__), 'html/index.html')
+        self.response.out.write(template.render(path, template_values))
+
 
 class enterPage(webapp.RequestHandler):
     def get(self):

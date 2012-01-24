@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}{{ pageTitle }}{% endblock %}
+
+
+
+{% block page_heading %}<h1>Home</h1>{% endblock %}
+{% block content %}
+
+<h1>DRL Calculator</h1>
+<div class="warning">
+<p>This software is still under development so may change without notice.  During updates, which may happen at any time,  the server may not be accessible for several minutes. As this tool is made available to you free of charge during this development phase we ask you to be patient.</p>
+
+
+</div>
+
+<div class="information">
+<h2>About this Tool</h2>
+<p>This calculator has been designed to analyse data associated with X-ray diagnostic imaging and to assist in the setting of local DRLs (Diagnostic Reference Levels).  Unlike more general purpose tools such as spreadsheets and statistical analysis software, this tool has been optimised for a single task.  This allows appropriate statistical analysis to be pre-programmed and some interpretation of the results provided.
+</p>
+<p>
+The use of this tool is simple: copy and paste your data from whatever document you have to hand.  The data entry box expects each data item on a new line, but will automatically strip out commas, if they are present.  Hit calculate and go to the results tab for a graph and analysis of your data.
+</p>
+
+
+<h2>Accuracy of Calculation</h2>
+<p>There are some interesting issues around the use of statistical functions within spreadsheets, that can result in unexpected errors in results.  Most of the time these errors are small and can be ignored, but the nature of the DRL calculation makes it sensitive to the method used, so discrepancies can occur when the same data is used in different software.  In spreadsheets the actual method used to make the calculation is hidden, making auditing of results difficult. This DRL calculator addresses these issues by:
+<ul>
+<li>
+ By using open source libraries we allow you to audit the calculation methods and check for systematic errors; </li>
+<li>Several sample data sets have been provided to let you compare the result using the DRL calculator and any other method.  You will notice that with "well behaved" data sets that meet the log normal distribution all methods agree on the answer.  With more typical data discrepancies can be large!</li></ul> 
+
+The most likely cause of unexpected results are:
+<ul>
+<li>data from more than one procedure or mode combined into a single data set. <strong>The graphical view of the data will show two or more humps if this is the case</strong>;</li>  
+<li>insufficient number of points;  <strong>Experience has shown that a minimum of twenty points are required, and more typically at least twice this number for consistent results.</strong> </li></ul>
+</p> 
+<p>We would welcome more data sets for demonstration purposes.
+</p>
+<h2>Legal</h2>
+<p>This tool uses Open Source libraries for statistical calculations released under LGPL and Webnebulus Ltd gratefully acknowledges their use and associated licence conditions. As this is an on-line tool we refer you to www.gnu.org for full licence details.</p>
+<p>Under the terms of the licence we make the source code available for your inspection and use under LGPL. </p>
+
+<h2>Privacy</h2>
+<p>This tool does not collect, save or otherwise store any information relating to the data used.  Some annonymous usage data  is automatically collated: the number of times the tool is used; error states; and similar technical data. This information will be used to guage the potential interest for a commercial product. </p>
+<h2>Comments</h2>
+<p> We encourage comments and enquiries about this product and welcome suggestion for application ideas. You may send  emails to drlchecker@webnebulus.co.uk or use the comment forms on the webnebulus.co.uk website</p>
+</div>
+
+{% endblock %}
